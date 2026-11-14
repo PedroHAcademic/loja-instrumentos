@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Instrumentos</title>
+</head>
+<body>
+
+    <h1>Instrumentos Cadastrados</h1>
+
+    <a href="/instrumento/add">Cadastrar novo instrumento</a>
+
+    <br><br>
+
+    <% instrumentos.forEach(instrumento => { %>
+
+        <h3><%= instrumento.nome %></h3>
+
+        <p>Fabricante: <%= instrumento.fabricante %></p>
+        <p>Preço: R$ <%= instrumento.preco %></p>
+        <p>Tipo: <%= instrumento.tipo %></p>
+
+        <hr>
+
+    <% }) %>
+
+</body>
+</html>
